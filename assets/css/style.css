@@ -1,0 +1,140 @@
+@import 'global.css';
+@import 'normalize.css';
+
+.section {
+    padding: 25px 0;
+}
+
+.section:first-child {
+    padding-top: 60px;
+}
+
+.section:last-child {
+    padding-bottom: 50px;
+}
+
+.article__title {
+    font-weight: 900;
+    font-size: 60px;
+    line-height: 120%;
+    margin: 0 0 40px;
+}
+
+.article__text {
+    margin-bottom: 30px;
+    font-size: 20px;
+}
+
+.article__text:last-child {
+    margin: 0;
+}
+
+.article__text-cursive {
+    font-style: italic;
+}
+
+.article__text-bold {
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.navigation {
+    padding: 25px 0 25px 0;
+}
+
+.navigation__title {
+    font-weight: 700;
+    font-size: 44px;
+    margin-bottom: 20px;
+    line-height: 120%;  
+}
+
+.navigation__list {
+    padding: 0;
+    margin: 0;
+    list-style-position: inside;
+    color: #02535F;
+}
+
+.navigation__item:not(:last-child) {
+    margin-bottom: 10px;
+}
+
+.navigation__link {
+    color: #02535F;
+    text-decoration: underline;
+}
+
+.section__title {
+    font-weight: 900;
+    font-size: 36px;
+    line-height: 120%;
+    margin-bottom: 30px;    
+}
+
+.section__block {
+    font-size: 0;
+}
+
+.section__block:not(:last-child) {
+    margin-bottom: 30px;
+}
+
+.section__image {
+    display: block;
+    margin: 0 auto 30px auto;
+}
+
+.section__image_type_alt {
+    margin: 0 auto;
+}
+
+.block__wrapper-right {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 520px;
+    padding-left: 30px;    
+}
+
+.block__wrapper-left {
+    display: inline-block;
+    vertical-align: top;
+    max-width: 520px;
+    padding-right: 40px;
+}
+
+.block__image {
+    display: inline-block;
+    margin: 0;  
+    font-size: 0;  
+}
+
+.section__figure {
+    border: 1px solid #000000;
+    padding-bottom: 15px;
+    margin-bottom: 30px;
+}
+
+.figure__image {
+    margin-bottom: 15px;
+}
+
+.figure__caption {
+    color: #5E5E5E;
+    padding: 0 30px;
+}
+
+.summary__title {
+    font-weight: 700;
+    font-size: 44px;
+    margin-bottom: 20px;
+    line-height: 120%;  
+}
+
+.summary__list {
+    margin-bottom: 30px;
+}
+
+.summary__item:not(:last-child) {
+    margin-bottom: 10px;
+}
