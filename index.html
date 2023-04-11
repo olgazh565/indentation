@@ -12,35 +12,35 @@
 </head>
 <body>
     <article class="article">
-        <header class="section">
-            <div class="container">            
-                <h1 class="article__title">Отступы в вёрстке: margin и padding</h1>
+        <header class="header">
+            <div class="container container-altered">            
+                <h1 class="title">Отступы в вёрстке: margin и padding</h1>
 
-                <p class="article__text">В этой статье я рассмотрю самые популярные "стандартные" решения для сохранения смысла и хорошей читаемости вашего кода. Если точнее — речь пойдет об основных правилах организации отступов. Они сильно влияют на общую функциональность кода и, если всё сделано верно, позволяют легко вносить изменения в любую его часть. При этом другие части кода продолжат нормально работать.</p>
-                <p class="article__text">Как это часто бывает, знание базовых принципов поможет проявить гибкость и выйти за их пределы. Эти знания особенно важны для начинающих, но также будут полезным напоминанием и для более опытных верстальщиков. Итак, поговорим о фундаментальных основах работы с отступами в вёрстке.</p>
-            
+                <p class="text">В этой статье я рассмотрю самые популярные "стандартные" решения для сохранения смысла и хорошей читаемости вашего кода. Если точнее — речь пойдет об основных правилах организации отступов. Они сильно влияют на общую функциональность кода и, если всё сделано верно, позволяют легко вносить изменения в любую его часть. При этом другие части кода продолжат нормально работать.</p>
+                <p class="text">Как это часто бывает, знание базовых принципов поможет проявить гибкость и выйти за их пределы. Эти знания особенно важны для начинающих, но также будут полезным напоминанием и для более опытных верстальщиков. Итак, поговорим о фундаментальных основах работы с отступами в вёрстке.</p>
             </div>
+        
+
+            <section class="navigation">
+                <div class="container-color-grey">
+                    <h2 class="container-color-grey__title">Содержание:</h2>
+
+                    <nav class="navigation__nav">
+                        <ol class="navigation__list">
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="#link1">Отступ задается от предыдущего элемента к следующему</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="#link2">Отступ задается последнему возможному элементу в DOM-дереве</a>
+                            </li>
+                            <li class="navigation__item">
+                                <a class="navigation__link" href="#link3">Для последнего элемента группы отступ обнуляется</a>
+                            </li>
+                        </ol>    
+                    </nav>
+                </div>
+            </section>
         </header>
-
-        <section class="section navigation">
-            <div class="container-color-grey">
-                <h2 class="container-color-grey__title">Содержание:</h2>
-
-                <nav class="navigation__nav">
-                    <ol class="navigation__list">
-                        <li class="navigation__item">
-                            <a class="navigation__link" href="#link1">Отступ задается от предыдущего элемента к следующему</a>
-                        </li>
-                        <li class="navigation__item">
-                            <a class="navigation__link" href="#link2">Отступ задается последнему возможному элементу в DOM-дереве</a>
-                        </li>
-                        <li class="navigation__item">
-                            <a class="navigation__link" href="#link3">Для последнего элемента группы отступ обнуляется</a>
-                        </li>
-                    </ol>    
-                </nav>
-            </div>
-        </section>
 
         <section class="section" id="link1">
             <div class="container">
@@ -49,18 +49,18 @@
                 <div class="section__block block">
                     <img class="block__image" src="./assets/imgs/image1.jpg" alt="foto">
                     <div class="block__wrapper block__wrapper_right">
-                        <p class="article__text"><span class="article__text-bold">важно:</span> <span class="article__text-cursive">margin</span> всегда задают от предыдущего элемента к следующему.</p>
-                        <p class="article__text">Свойство <span class="article__text-cursive">margin</span> необходимо только для того, чтобы отодвинуть своего соседа справа или снизу, поэтому используется <span class="article__text-cursive">margin-right</span> и <span class="article__text-cursive">margin-bottom</span>.</p>
-                        <p class="article__text">(!) Свойства <span class="article__text-cursive">margin-left</span> и <span class="article__text-cursive">margin-top</span> используются крайне редко.</p>
-                        <p class="article__text">Для <span class="article__text-cursive">padding</span> верно обратное. Исключением является его применения в декоративных целях, например, для увеличения области ссылки.</p>
+                        <p class="text"><span class="text-bold">важно:</span> <span class="text-cursive">margin</span> всегда задают от предыдущего элемента к следующему.</p>
+                        <p class="text">Свойство <span class="text-cursive">margin</span> необходимо только для того, чтобы отодвинуть своего соседа справа или снизу, поэтому используется <span class="text-cursive">margin-right</span> и <span class="ext-cursive">margin-bottom</span>.</p>
+                        <p class="text">(!) Свойства <span class="text-cursive">margin-left</span> и <span class="text-cursive">margin-top</span> используются крайне редко.</p>
+                        <p class="text">Для <span class="text-cursive">padding</span> верно обратное. Исключением является его применения в декоративных целях, например, для увеличения области ссылки.</p>
                     </div>
                 </div>
 
                 <div class="section__block block">
                     <div class="block__wrapper block__wrapper_left">
-                        <p class="article__text">Отступ внутри блока сверху или слева реализуется через <span class="article__text-cursive">padding-top</span> и <span class="article__text-cursive">padding-left</span> родителя.</p>
-                        <p class="article__text">Отступы, как правило, делают в направлении от предыдущего элемента к следующему. Так элемент не будет толкать сам себя.</p>
-                        <p class="article__text">Изначально элемент статичен, а его положение может меняться только под воздействием свойств других блоков или свойств родителя.</p>
+                        <p class="text">Отступ внутри блока сверху или слева реализуется через <span class="text-cursive">padding-top</span> и <span class="text-cursive">padding-left</span> родителя.</p>
+                        <p class="text">Отступы, как правило, делают в направлении от предыдущего элемента к следующему. Так элемент не будет толкать сам себя.</p>
+                        <p class="text">Изначально элемент статичен, а его положение может меняться только под воздействием свойств других блоков или свойств родителя.</p>
                     </div>
                     <img class="block__image" src="./assets/imgs/image2.jpg" alt="foto">
                 </div>            
@@ -71,22 +71,22 @@
             <div class="container">
                 <h3 class="section__title">Отступ задается последнему возможному элементу в DOM-дереве</h3>
 
-                <p class="article__text">Вообще, margin задают исключительно между соседними элементами DOM-дерева. Для примера, посмотрите на этот список:</p>
+                <p class="text">Вообще, margin задают исключительно между соседними элементами DOM-дерева. Для примера, посмотрите на этот список:</p>
                 <img class="section__image" src="./assets/imgs/image3.jpg" alt="foto">
                 <img class="section__image" src="./assets/imgs/image4.jpg" alt="foto">
-                <p class="article__text">Отступ делают за счёт соседних элементов, а не дочерних:</p>
+                <p class="text">Отступ делают за счёт соседних элементов, а не дочерних:</p>
 
                 <figure class="section__figure figure">
                     <img class="figure__image" src="./assets/imgs/image5.jpg" alt="foto">
-                    <figcaption class="figure__caption"><span class="article__text-bold">важно:</span> здесь <span class="article__text-cursive">.list-item</span> — последний возможный элемент в котором мы задаём отступ, чтобы разделить списки.</figcaption>
+                    <figcaption class="figure__caption"><span class="text-bold">важно:</span> здесь <span class="text-cursive">.list-item</span> — последний возможный элемент в котором мы задаём отступ, чтобы разделить списки.</figcaption>
                 </figure>
 
-                <p class="article__text">Казалось бы, можно задать отступ параграфу &lt;p&gt;, либо обёртке &lt;article&gt; для достижения той же цели. Внешне останется все точно также, но так делать не рекомендуется.</p>
-                <p class="article__text">Предыдущий пример был достаточно простым, но бывает вложенность значительно больше.</p>
+                <p class="text">Казалось бы, можно задать отступ параграфу &lt;p&gt;, либо обёртке &lt;article&gt; для достижения той же цели. Внешне останется все точно также, но так делать не рекомендуется.</p>
+                <p class="text">Предыдущий пример был достаточно простым, но бывает вложенность значительно больше.</p>
                 <img class="section__image" src="./assets/imgs/image6.jpg" alt="foto">
-                <p class="article__text">В случае с заголовком, если ему необходим отступ сверху, последним элементом будет <span class="article__text-cursive">section</span>. Именно для него задается <span class="article__text-cursive">padding-top</span>, а не <span class="article__text-cursive">div</span> с классом container. Свойства <span class="article__text-cursive">margin</span>, которые стоят по умолчанию необходимо обнулить.</p>
+                <p class="text">В случае с заголовком, если ему необходим отступ сверху, последним элементом будет <span class="text-cursive">section</span>. Именно для него задается <span class="text-cursive">padding-top</span>, а не <span class="text-cursive">div</span> с классом container. Свойства <span class="text-cursive">margin</span>, которые стоят по умолчанию необходимо обнулить.</p>
                 <img class="section__image" src="./assets/imgs/image7.jpg" alt="foto">
-                <p class="article__text">Это необходимо для более простого поиска отступов в будущем &mdash; для вас или того, кто будет верстать после вас. Кроме того, возможны серьёзные проблемы при динамическом дублировании или выводе вёрстки с нестандартной структурой отступов.</p>
+                <p class="text">Это необходимо для более простого поиска отступов в будущем &mdash; для вас или того, кто будет верстать после вас. Кроме того, возможны серьёзные проблемы при динамическом дублировании или выводе вёрстки с нестандартной структурой отступов.</p>
             </div>
         </section>
 
@@ -94,19 +94,19 @@
             <div class="container">
                 <h3 class="section__title">Для последнего элемента группы отступ всегда обнуляется</h3>
 
-                <p class="article__text">Для наглядности возьмём наш предыдущий пример с рецептами</p>
-                <p class="article__text">Между рецептами расстояние одинаковое. Можно заметить, что и до следующего блока расстояние такое же.</p>
+                <p class="text">Для наглядности возьмём наш предыдущий пример с рецептами</p>
+                <p class="text">Между рецептами расстояние одинаковое. Можно заметить, что и до следующего блока расстояние такое же.</p>
                 <img class="section__image" src="./assets/imgs/image8.jpg" alt="foto">
-                <p class="article__text">В соответствии со вторым принципом: последний <span class="article__text-cursive">margin</span> обнуляется, а нижний отступ задаётся через <span class="article__text-cursive">padding</span> для <span class="article__text-cursive">section</span>. Я чаще всего задаю <span class="article__text-cursive">padding</span> для секции с обоих сторон, если расстояние между секциями 100px задаю секциям <span class="article__text-cursive">padding-top:50px</span> и <span class="article__text-cursive">padding-bottom:50px</span>.</p>
+                <p class="text">В соответствии со вторым принципом: последний <span class="text-cursive">margin</span> обнуляется, а нижний отступ задаётся через <span class="text-cursive">padding</span> для <span class="text-cursive">section</span>. Я чаще всего задаю <span class="text-cursive">padding</span> для секции с обоих сторон, если расстояние между секциями 100px задаю секциям <span class="text-cursive">padding-top:50px</span> и <span class="text-cursive">padding-bottom:50px</span>.</p>
                 <img class="section__image" src="./assets/imgs/image9.jpg" alt="foto">
                 <img class="section__image section__image_type_alt" src="./assets/imgs/image10.jpg" alt="foto">
                 <img class="section__image" src="./assets/imgs/image11.jpg" alt="foto">
-                <p class="article__text">Для большего понимания рассмотрим другой пример, который часто встречается на практике:</p>
+                <p class="text">Для большего понимания рассмотрим другой пример, который часто встречается на практике:</p>
                 <img class="section__image" src="./assets/imgs/image12.jpg" alt="foto">
                 <img class="section__image" src="./assets/imgs/image13.jpg" alt="foto">
-                <p class="article__text">Здесь нас интересует отступ между пунктами меню и списком с кнопкой поиска. Отступы между пунктами меню задаются так:</p>
+                <p class="text">Здесь нас интересует отступ между пунктами меню и списком с кнопкой поиска. Отступы между пунктами меню задаются так:</p>
                 <img class="section__image" src="./assets/imgs/image14.jpg" alt="foto"> 
-                <p class="article__text">Советую использовать псевдоклассы :last-child чаще других, например так:</p>
+                <p class="text">Советую использовать псевдоклассы :last-child чаще других, например так:</p>
                 <img class="section__image" src="./assets/imgs/image15.jpg" alt="foto">
             </div>
         </section>
@@ -122,7 +122,7 @@
                     <li class="summary__item">&mdash; внутренний отступ задаём самому верхнему элементу в дом дереве</li>
                     <li class="summary__item">&mdash; последнему элементу группы отступ всегда обнуляем</li>
                 </ul>
-                <p class="article__text">Конечно бывают исключения. Ведь макеты бывают различной сложности. Иногда базовые принципы приходится нарушать в угоду дизайнерского решения или простоты вёрстки. Но для этого эти принципы необходимо хорошо знать.</p>
+                <p class="text">Конечно бывают исключения. Ведь макеты бывают различной сложности. Иногда базовые принципы приходится нарушать в угоду дизайнерского решения или простоты вёрстки. Но для этого эти принципы необходимо хорошо знать.</p>
             </div>
         </section>
 

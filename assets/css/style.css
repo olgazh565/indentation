@@ -1,45 +1,46 @@
 @import 'global.css';
 @import 'normalize.css';
 
+.header {
+    padding-top: 60px;
+    margin-bottom: 50px;
+}
+
 .section {
     padding: 25px 0;
 }
 
-.section:first-child {
-    padding-top: 60px;
+.section#link1 {
+    padding-top: 0;
 }
 
 .section:last-child {
     padding-bottom: 50px;
 }
 
-.article__title {
+.title {
     font-weight: 900;
     font-size: 60px;
     line-height: 120%;
     margin: 0 0 40px;
 }
 
-.article__text {
+.text {
     margin-bottom: 30px;
     font-size: 20px;
 }
 
-.article__text:last-child {
+.text:last-child {
     margin: 0;
 }
 
-.article__text-cursive {
+.text-cursive {
     font-style: italic;
 }
 
-.article__text-bold {
+.text-bold {
     text-transform: uppercase;
     font-weight: bold;
-}
-
-.navigation {
-    padding: 25px 0 25px 0;
 }
 
 .container-color-grey__title {

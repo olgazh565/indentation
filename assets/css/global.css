@@ -74,6 +74,10 @@ iframe {
     margin: 0 auto;
 }
 
+.container-altered {
+    margin-bottom: 50px;
+}
+
 .container-color-grey {
     max-width: 1140px;
     padding: 25px 45px;
