@@ -1,21 +1,16 @@
 @import 'global.css';
 @import 'normalize.css';
 
-.header {
-    padding-top: 60px;
-    margin-bottom: 50px;
-}
-
 .section {
     padding: 25px 0;
 }
 
-.section#link1 {
-    padding-top: 0;
-}
-
 .section:last-child {
     padding-bottom: 50px;
+}
+
+.header {
+    padding-top: 60px;
 }
 
 .title {
